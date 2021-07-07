@@ -1,0 +1,7 @@
+SR2020data.py is a game file editing utility for the videogame SR2020 and its DLC.  I have created a program that can parse the game data from CSV format into SQLite.
+I can then use pythonic sqlite commands to select and edit data, then save the data back to the game files.  This is not a GUI.  This is command line and requires
+Python and SQL knowledge to edit files.
+
+While playing this game, I found many errors in the unit data and wanted to implement my own modifications.  Manually editing gigantic CSV files is very taxing and
+the smallest error will break the game data.  So I created a python program to handle the data and nicely marry the information into a temporary database that can
+more easily be edited by a knowledgable DBA / Python programmer.  I handle data manipulation through the IDLE utility.

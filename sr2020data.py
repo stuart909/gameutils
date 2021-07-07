@@ -1,3 +1,7 @@
+#Written by Stuart Anderson
+#GNU 3.0 License
+#SR2020 game file editor utility for usage in Python IDLE
+
 import re, sqlite3
 
 class Data_Tools:
@@ -153,6 +157,6 @@ class Database:
 
 
 db = Database()
-db.load("C:\\Users\\stugu\\AppData\\Local\\Programs\\Python\\Python38-32\\tmp.db")
+db.load("C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38-32\\tmp.db")
 #u = Units()
 #r = Research()

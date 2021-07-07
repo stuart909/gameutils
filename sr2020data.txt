@@ -5,3 +5,19 @@ Python and SQL knowledge to edit files.
 While playing this game, I found many errors in the unit data and wanted to implement my own modifications.  Manually editing gigantic CSV files is very taxing and
 the smallest error will break the game data.  So I created a python program to handle the data and nicely marry the information into a temporary database that can
 more easily be edited by a knowledgable DBA / Python programmer.  I handle data manipulation through the IDLE utility.
+
+
+example:
+\\ After the database object is loaded and instantiated as d:
+
+d = u.pull(u.search('Conscript',u.name,u.id),u.id)
+d[0][u.name]='Infantry'
+d[0]['(YearAvail - 1900)']='43'
+d[0]['TechReq1']='1313'
+
+d = u.search('Militia II',u.name,u.id)
+d = u.pull(d,u.id)
+d[0]['TechReq1']='1313'
+d[0]['TechReq2']='1598'
+d[0][u.name]='Infantry'
+d[0]['(YearAvail - 1900)']='46'

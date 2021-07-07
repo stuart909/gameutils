@@ -8,7 +8,7 @@ more easily be edited by a knowledgable DBA / Python programmer.  I handle data 
 
 
 example:
-\\ After the database object is loaded and instantiated as d:
+\\ After the database object is constructed as d:
 
 d = u.pull(u.search('Conscript',u.name,u.id),u.id)
 d[0][u.name]='Infantry'

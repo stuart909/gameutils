@@ -8,16 +8,18 @@ more easily be edited by a knowledgable DBA / Python programmer.  I handle data 
 
 
 example:
-\\ After the database object is constructed as d:
+# After the database object is constructed as db and the load function loads the temporary database:
+#u = Units()
+#r = Research()
 
-d = u.pull(u.search('Conscript',u.name,u.id),u.id)
-d[0][u.name]='Infantry'
-d[0]['(YearAvail - 1900)']='43'
-d[0]['TechReq1']='1313'
+d = u.pull(u.search('Conscript',u.name,u.id),u.id) #pulls id's for all instances of "Conscript" unit search in the units data
+d[0][u.name]='Infantry' #sets index 0 of d's name to Infantry
+d[0]['(YearAvail - 1900)']='43' #sets index 0 of d's year availability to '43'
+d[0]['TechReq1']='1313' #sets index 0 of d's tech requirement 1 slot to tech ID 1313
 
-d = u.search('Militia II',u.name,u.id)
-d = u.pull(d,u.id)
-d[0]['TechReq1']='1313'
+d = u.search('Militia II',u.name,u.id) # will now search the units for 'Militia II'
+d = u.pull(d,u.id) # get the ID's from this d listing containing 'Militia II' hits
+d[0]['TechReq1']='1313' 
 d[0]['TechReq2']='1598'
 d[0][u.name]='Infantry'
 d[0]['(YearAvail - 1900)']='46'

@@ -18,7 +18,7 @@ The card creator was a utility that I wrote that made game cards for a Savage Wo
 
 
 
-I will find and upload when time permits.  Probably never if nobody asks.
+I will find and upload additional utilities when time permits.  Probably never if nobody asks.
 
 Games:
 - Supreme Ruler 2020

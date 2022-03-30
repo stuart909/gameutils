@@ -22,6 +22,7 @@ I will find and upload additional utilities when time permits.  Probably never i
 
 Games:
 - Supreme Ruler 2020
+- Savage Worlds Freedom Squadron
 
 
 TODO
